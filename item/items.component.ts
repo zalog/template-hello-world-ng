@@ -20,7 +20,7 @@ export class ItemsComponent implements OnInit {
     }
 
     onItemTap(args:ItemEventData){
-        let itemID = this.items[args.index].id;
+        let itemId = this.items[args.index].id;
         this.routerExtensions.navigate(['/item', itemID] )
     }
 }
