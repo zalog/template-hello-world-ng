@@ -1,6 +1,6 @@
 /*
-In an Angular 2 application navigation is done using the Angular Component Router.
-https://angular.io/docs/ts/latest/guide/router.html
+In an NativeScript + Angular 2 application navigation is done using the NativeScriptRouterModule.
+https://docs.nativescript.org/core-concepts/angular-navigation
 */
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
@@ -10,7 +10,7 @@ import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 
 /*
-Create a RouterConfig object which maps paths to components and parameters:
+Create a configuration object (Routes) which maps paths to components and parameters
 */
 const routes: Routes = [
     { path: "", redirectTo: "/items", pathMatch: "full" },
@@ -20,7 +20,7 @@ const routes: Routes = [
 
 /*
 Use the NativeScriptRouterModule API to import your routes.
-The pass your AppRoutingModule to your application module (app.module.ts)
+Then pass your AppRoutingModule to your application module (app.module.ts)
 */
 @NgModule({
     imports: [NativeScriptRouterModule.forRoot(routes)],

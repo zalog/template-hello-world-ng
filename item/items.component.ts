@@ -21,9 +21,8 @@ The @Component decorator contains metadata describing how to create and present 
 export class ItemsComponent implements OnInit {
     items: Item[];
 
-    /*
-    Using our injectible service to load the data in the component
-    */
+
+    // Using our injectible service to load the data in the component
     constructor(private itemService: ItemService) { }
 
     /*
