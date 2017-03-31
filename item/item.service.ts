@@ -2,6 +2,9 @@ import { Injectable } from "@angular/core";
 
 import { Item } from "./item";
 
+/*
+@Injectable() marks a class as available to an injector for instantiation.
+*/
 @Injectable()
 export class ItemService {
     private items = new Array<Item>(
