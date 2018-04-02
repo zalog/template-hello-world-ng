@@ -30,7 +30,6 @@
     "dependencies": {
         "nativescript-theme-core": "~1.0.4",
         "nativescript-angular": "~5.2.0",
-        "tns-core-modules": "~3.4.0",
         "@angular/animations": "~5.2.0",
         "@angular/common": "~5.2.0",
         "@angular/compiler": "~5.2.0",
